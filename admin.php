@@ -79,6 +79,7 @@ $result = $conn->query($sql);
     <nav class="bg-gray-900 text-white p-4 flex justify-between items-center shadow-lg">
         <div class="flex items-center gap-3">
             <h1 class="font-bold text-yellow-500 text-lg">NMS Admin</h1>
+            <a href="https://nm.noorgee.pk" role="button" aria-label="Return to Noor Media home" style="display:inline-block;padding:8px 12px;background:#007bff;color:#fff;border-radius:4px;text-decoration:none;">Return to Home</a>
             <span class="bg-gray-700 text-xs px-2 py-1 rounded">Super User</span>
         </div>
         <a href="?logout=true" class="text-sm bg-red-600 hover:bg-red-500 px-3 py-1 rounded">Logout</a>
