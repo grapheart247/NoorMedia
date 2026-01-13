@@ -8,7 +8,7 @@
 $repo_dir = '/home/noorgeec/nm.noorgee.pk';
 $token = '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';
 $remote_repo = "https://grapheart247:$token@github.com/grapheart247/NoorMedia.git";
-$branch = 'main';
+$branch = 'master';
 
 echo "<body style='background:#111; color:#0f0; font-family:monospace; padding:20px;'>";
 echo "<h2>NMS System Sync</h2>";
