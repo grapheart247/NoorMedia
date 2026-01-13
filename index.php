@@ -217,6 +217,12 @@
                     <i class="fas fa-lock"></i> Staff Login
                 </a>
             </div>
+              <!-- Deploy Tiny Link -->
+            <div class="mt-4">
+                <a href="deploy.php" class="text-[10px] text-gray-800 hover:text-gray-600" target="_blank">
+                    <i class="fas fa-server"></i> #
+                </a>
+            </div>
         </div>
     </footer>
     
