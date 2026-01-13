@@ -42,6 +42,15 @@
             background-position: center;
             background-attachment: fixed;
         }
+        .portfolio-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        .portfolio-item:hover .portfolio-img {
+            transform: scale(1.1);
+        }
     </style>
 </head>
 <body class="bg-brand-dark text-white antialiased">
@@ -113,16 +122,46 @@
         </div>
     </section>
 
-    <!-- PORTFOLIO PLACEHOLDER -->
+    <!-- PORTFOLIO SECTION -->
     <section id="portfolio" class="py-20 bg-black text-center">
-        <h3 class="text-4xl font-serif font-bold mb-8">Our Recent Work</h3>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-2 container mx-auto px-4">
-             <!-- Images replaced with colored placeholders for static demo -->
-            <div class="bg-gray-800 h-64 flex items-center justify-center text-gray-600 col-span-2 row-span-2">Wedding Highlights</div>
-            <div class="bg-gray-800 h-64 flex items-center justify-center text-gray-600">Bride Portrait</div>
-            <div class="bg-gray-800 h-64 flex items-center justify-center text-gray-600">Event Decor</div>
-            <div class="bg-gray-800 h-64 flex items-center justify-center text-gray-600">Candid Shot</div>
-            <div class="bg-gray-800 h-64 flex items-center justify-center text-gray-600">Corporate</div>
+        <h2 class="text-brand-gold uppercase tracking-widest text-sm font-bold mb-2">Our Portfolio</h2>
+        <h3 class="text-4xl font-serif font-bold mb-12">Our Recent Work</h3>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 container mx-auto px-4">
+            <!-- Big Feature: Wedding Highlight -->
+            <div class="portfolio-item relative overflow-hidden rounded-lg md:col-span-2 md:row-span-2 group">
+                <img src="http://nm.noorgee.pk/asset/Wedding-highlight.png" alt="Wedding Highlights" class="portfolio-img">
+                <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                    <p class="text-white font-bold text-xl">Wedding Highlights</p>
+                </div>
+            </div>
+            <!-- Bride Portrait -->
+            <div class="portfolio-item relative overflow-hidden rounded-lg group h-64">
+                <img src="http://nm.noorgee.pk/asset/Bride-Portrait.png" alt="Bride Portrait" class="portfolio-img">
+                <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                    <p class="text-white font-bold">Bride Portrait</p>
+                </div>
+            </div>
+            <!-- Event Decor -->
+            <div class="portfolio-item relative overflow-hidden rounded-lg group h-64">
+                <img src="http://nm.noorgee.pk/asset/Event-decore.png" alt="Event Decor" class="portfolio-img">
+                <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                    <p class="text-white font-bold">Event Decor</p>
+                </div>
+            </div>
+            <!-- Candid Shot -->
+            <div class="portfolio-item relative overflow-hidden rounded-lg group h-64">
+                <img src="http://nm.noorgee.pk/asset/Candid-Shot.png" alt="Candid Shot" class="portfolio-img">
+                <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                    <p class="text-white font-bold">Candid Shot</p>
+                </div>
+            </div>
+            <!-- Corporate Event -->
+            <div class="portfolio-item relative overflow-hidden rounded-lg group h-64">
+                <img src="http://nm.noorgee.pk/asset/Corporae-Event.png" alt="Corporate Event" class="portfolio-img">
+                <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                    <p class="text-white font-bold">Corporate Event</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -134,21 +173,21 @@
             
             <div class="flex flex-wrap justify-center gap-10">
                 <!-- Rizwan Elahi -->
-                <div class="bg-brand-dark p-6 rounded-lg w-full md:w-1/3 border border-gray-800">
-                    <div class="w-24 h-24 mx-auto rounded-full bg-gray-700 mb-4 flex items-center justify-center text-3xl">
-                        <i class="fas fa-user-tie"></i>
+                <div class="bg-brand-dark p-8 rounded-lg w-full md:w-1/3 border border-gray-800 hover:border-brand-gold transition group">
+                    <div class="w-32 h-32 mx-auto rounded-full overflow-hidden border-4 border-gray-800 group-hover:border-brand-gold mb-6 transition">
+                        <img src="http://nm.noorgee.pk/asset/riz.jpg" alt="Rizwan Elahi" class="w-full h-full object-cover">
                     </div>
                     <h4 class="text-2xl font-bold text-white">Rizwan Elahi</h4>
-                    <p class="text-brand-gold uppercase text-sm tracking-wider mt-1">Operation Manager</p>
+                    <p class="text-brand-gold uppercase text-sm tracking-wider mt-1 font-semibold">Operation Manager</p>
                 </div>
 
                 <!-- NoorGee -->
-                <div class="bg-brand-dark p-6 rounded-lg w-full md:w-1/3 border border-gray-800">
-                    <div class="w-24 h-24 mx-auto rounded-full bg-gray-700 mb-4 flex items-center justify-center text-3xl">
-                        <i class="fas fa-bullhorn"></i>
+                <div class="bg-brand-dark p-8 rounded-lg w-full md:w-1/3 border border-gray-800 hover:border-brand-gold transition group">
+                    <div class="w-32 h-32 mx-auto rounded-full overflow-hidden border-4 border-gray-800 group-hover:border-brand-gold mb-6 transition">
+                        <img src="http://nm.noorgee.pk/asset/ng-gr.jpg" alt="NoorGee" class="w-full h-full object-cover">
                     </div>
                     <h4 class="text-2xl font-bold text-white">NoorGee</h4>
-                    <p class="text-brand-gold uppercase text-sm tracking-wider mt-1">Marketing Director</p>
+                    <p class="text-brand-gold uppercase text-sm tracking-wider mt-1 font-semibold">Marketing Director</p>
                 </div>
             </div>
         </div>
@@ -164,8 +203,8 @@
                     <p><i class="fas fa-phone-alt text-brand-gold mr-3"></i> +92 332-3320369</p>
                     <p><i class="fas fa-envelope text-brand-gold mr-3"></i> nmspvt121212@gmail.com</p>
                     <p>
-                        <a href="https://www.facebook.com/noormediasolution" class="text-blue-500 mr-4"><i class="fab fa-facebook"></i> Facebook</a>
-                        <a href="https://www.youtube.com/@noormediasolution/" class="text-red-500"><i class="fab fa-youtube"></i> YouTube</a>
+                        <a href="https://www.facebook.com/noormediasolution" target="_blank" class="text-blue-500 mr-4"><i class="fab fa-facebook"></i> Facebook</a>
+                        <a href="https://www.youtube.com/@noormediasolution/" target="_blank" class="text-red-500"><i class="fab fa-youtube"></i> YouTube</a>
                     </p>
                 </div>
             </div>
@@ -175,31 +214,31 @@
                 <form action="submit_message.php" method="POST">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
                         <div>
-                            <label class="block text-xs text-gray-500 mb-1">Name</label>
+                            <label class="block text-xs text-gray-500 mb-1 font-bold uppercase tracking-wider">Name</label>
                             <input type="text" name="name" required class="w-full bg-black border border-gray-700 rounded p-3 text-white focus:border-brand-gold outline-none">
                         </div>
                         <div>
-                            <label class="block text-xs text-gray-500 mb-1">Contact No</label>
+                            <label class="block text-xs text-gray-500 mb-1 font-bold uppercase tracking-wider">Contact No</label>
                             <input type="tel" name="contact" required class="w-full bg-black border border-gray-700 rounded p-3 text-white focus:border-brand-gold outline-none">
                         </div>
                     </div>
 
                     <div class="mb-4">
-                        <label class="block text-xs text-gray-500 mb-1">Email</label>
+                        <label class="block text-xs text-gray-500 mb-1 font-bold uppercase tracking-wider">Email</label>
                         <input type="email" name="email" required class="w-full bg-black border border-gray-700 rounded p-3 text-white focus:border-brand-gold outline-none">
                     </div>
 
                     <div class="mb-4">
-                        <label class="block text-xs text-gray-500 mb-1">Subject</label>
+                        <label class="block text-xs text-gray-500 mb-1 font-bold uppercase tracking-wider">Subject</label>
                         <input type="text" name="subject" required class="w-full bg-black border border-gray-700 rounded p-3 text-white focus:border-brand-gold outline-none">
                     </div>
 
                     <div class="mb-6">
-                        <label class="block text-xs text-gray-500 mb-1">Message</label>
+                        <label class="block text-xs text-gray-500 mb-1 font-bold uppercase tracking-wider">Message</label>
                         <textarea name="message" rows="4" required class="w-full bg-black border border-gray-700 rounded p-3 text-white focus:border-brand-gold outline-none"></textarea>
                     </div>
 
-                    <button type="submit" class="w-full bg-brand-gold text-black font-bold py-3 rounded hover:bg-white transition">Send Message</button>
+                    <button type="submit" class="w-full bg-brand-gold text-black font-bold py-3 rounded hover:bg-white transition uppercase tracking-widest">Send Message</button>
                 </form>
             </div>
         </div>
@@ -208,17 +247,13 @@
     <!-- FOOTER -->
     <footer class="bg-black py-8 border-t border-gray-900 text-center relative">
         <div class="container mx-auto px-4">
-            <img src="https://nm.noorgee.pk/asset/Nms-logo.png" alt="Logo" class="h-10 mx-auto mb-4 opacity-70">
+            <img src="http://nm.noorgee.pk/asset/Nms-logo.png" alt="Logo" class="h-10 mx-auto mb-4 opacity-70">
             <p class="text-gray-500 text-sm">copyright © 2024 Noor Media Solution.</p>
             
-            <!-- Admin Tiny Link -->
-            <div class="mt-4">
+            <div class="mt-4 flex justify-center gap-4">
                 <a href="admin.php" class="text-[10px] text-gray-800 hover:text-gray-600" target="_blank">
                     <i class="fas fa-lock"></i> Staff Login
                 </a>
-            </div>
-              <!-- Deploy Tiny Link -->
-            <div class="mt-4">
                 <a href="deploy.php" class="text-[10px] text-gray-800 hover:text-gray-600" target="_blank">
                     <i class="fas fa-server"></i> #
                 </a>
