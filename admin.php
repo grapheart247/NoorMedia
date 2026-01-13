@@ -57,9 +57,9 @@ $sql = "SELECT * FROM messages";
 if ($filter == 'nm') {
     $sql .= " WHERE site_source = 'nm.noorgee.pk'";
 } elseif ($filter == 'web') {
-    $sql .= " WHERE site_source = 'noorgee.pk/Web/'";
+    $sql .= " WHERE site_source = 'noorgee.pk/Web'";
 } elseif ($filter == 'dev') {
-    $sql .= " WHERE site_source = 'noorgee.pk/Dev/'";
+    $sql .= " WHERE site_source = 'noorgee.pk/Dev'";
 }
 $sql .= " ORDER BY created_at DESC";
 
@@ -95,8 +95,8 @@ $result = $conn->query($sql);
                 <select name="filter" class="p-2 border rounded shadow-sm bg-white text-gray-700" onchange="this.form.submit()">
                     <option value="all" <?php if($filter=='all') echo 'selected'; ?>>All Messages</option>
                     <option value="nm" <?php if($filter=='nm') echo 'selected'; ?>>nm.noorgee.pk (Photography)</option>
-                    <option value="web" <?php if($filter=='web') echo 'selected'; ?>>noorgee.pk/Web/</option>
-                    <option value="dev" <?php if($filter=='dev') echo 'selected'; ?>>noorgee.pk/Dev/</option>
+                    <option value="web" <?php if($filter=='web') echo 'selected'; ?>>noorgee.pk/Web</option>
+                    <option value="dev" <?php if($filter=='dev') echo 'selected'; ?>>noorgee.pk/Dev</option>
                 </select>
             </form>
         </div>
