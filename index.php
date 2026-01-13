@@ -50,7 +50,7 @@
     <nav class="fixed w-full z-50 bg-black/90 backdrop-blur-sm border-b border-gray-800" id="navbar">
         <div class="container mx-auto px-4 py-3 flex justify-between items-center">
             <a href="#" class="flex items-center gap-3">
-                <img src="https://nm.noorgee.pk/Nms-logo.png" alt="NMS Logo" class="h-12 md:h-14 object-contain">
+                <img src="http://nm.noorgee.pk/asset/Nms-logo.png" alt="NMS Logo" class="h-12 md:h-14 object-contain">
                 <div class="hidden md:block">
                     <h1 class="text-xl font-serif font-bold text-white tracking-wide">NOOR MEDIA</h1>
                     <p class="text-[10px] text-brand-gold tracking-[0.2em] uppercase">Solution</p>
@@ -208,7 +208,7 @@
     <!-- FOOTER -->
     <footer class="bg-black py-8 border-t border-gray-900 text-center relative">
         <div class="container mx-auto px-4">
-            <img src="https://nm.noorgee.pk/Nms-logo.png" alt="Logo" class="h-10 mx-auto mb-4 opacity-70">
+            <img src="https://nm.noorgee.pk/asset/Nms-logo.png" alt="Logo" class="h-10 mx-auto mb-4 opacity-70">
             <p class="text-gray-500 text-sm">© 2024 Noor Media Solution.</p>
             
             <!-- Admin Tiny Link -->
