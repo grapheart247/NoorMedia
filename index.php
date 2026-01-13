@@ -209,7 +209,7 @@
     <footer class="bg-black py-8 border-t border-gray-900 text-center relative">
         <div class="container mx-auto px-4">
             <img src="https://nm.noorgee.pk/asset/Nms-logo.png" alt="Logo" class="h-10 mx-auto mb-4 opacity-70">
-            <p class="text-gray-500 text-sm">© 2024 Noor Media Solution.</p>
+            <p class="text-gray-500 text-sm">copyright © 2024 Noor Media Solution.</p>
             
             <!-- Admin Tiny Link -->
             <div class="mt-4">
