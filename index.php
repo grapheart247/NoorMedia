@@ -217,12 +217,12 @@
                 </div>
                 
                 <!-- Facebook Feed Box -->
-                <div class="md:w-1/2 w-full flex justify-center md:justify-end">
+                <div class="md:w-9/10 w-full flex justify-center md:justify-end mx-auto">
                     <div class="bg-brand-gray p-4 rounded-xl border border-gray-800 shadow-2xl">
                         <div class="fb-page" 
                              data-href="https://www.facebook.com/noormediasolution" 
                              data-tabs="timeline" 
-                             data-width="500" 
+                             data-width="700" 
                              data-height="500" 
                              data-small-header="false" 
                              data-adapt-container-width="true" 
