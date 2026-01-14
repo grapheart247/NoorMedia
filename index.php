@@ -54,6 +54,9 @@
     </style>
 </head>
 <body class="bg-brand-dark text-white antialiased">
+    <!-- Facebook SDK -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v24.0"></script>
 
     <!-- NAVIGATION -->
     <nav class="fixed w-full z-50 bg-black/90 backdrop-blur-sm border-b border-gray-800" id="navbar">
@@ -71,6 +74,7 @@
                 <a href="#services" class="hover:text-brand-gold transition">SERVICES</a>
                 <a href="#portfolio" class="hover:text-brand-gold transition">PORTFOLIO</a>
                 <a href="#team" class="hover:text-brand-gold transition">TEAM</a>
+                <a href="#facebook-activity" class="hover:text-brand-gold transition">FACEBOOK</a>
                 <a href="#contact" class="px-5 py-2 bg-brand-gold text-black rounded-full hover:bg-white transition">BOOK NOW</a>
             </div>
             <button class="md:hidden text-2xl text-white" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
@@ -80,6 +84,7 @@
         <div id="mobile-menu" class="hidden md:hidden bg-brand-gray border-t border-gray-700 text-center py-4">
             <a href="#home" class="block py-3 hover:text-brand-gold">Home</a>
             <a href="#services" class="block py-3 hover:text-brand-gold">Services</a>
+            <a href="#facebook-activity" class="block py-3 hover:text-brand-gold">Facebook</a>
             <a href="#contact" class="block py-3 text-brand-gold font-bold">Contact Us</a>
         </div>
     </nav>
@@ -188,6 +193,46 @@
                     </div>
                     <h4 class="text-2xl font-bold text-white">NoorGee</h4>
                     <p class="text-brand-gold uppercase text-sm tracking-wider mt-1 font-semibold">Marketing Director</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FACEBOOK ACTIVITY SECTION -->
+    <section id="facebook-activity" class="py-20 bg-black">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row gap-12 items-start">
+                <!-- Text Content -->
+                <div class="md:w-1/2">
+                    <h2 class="text-brand-gold uppercase tracking-widest text-sm font-bold mb-2">Stay Connected</h2>
+                    <h3 class="text-4xl font-serif font-bold mb-6">Our Facebook Activity</h3>
+                    <p class="text-gray-400 mb-8 text-lg">
+                        Follow our latest updates, behind-the-scenes moments, and recent event highlights directly from our Facebook page. We regularly share our work and interact with our community there.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="https://www.facebook.com/noormediasolution" target="_blank" class="px-6 py-3 bg-blue-600 text-white font-bold rounded hover:bg-blue-700 transition flex items-center gap-2">
+                            <i class="fab fa-facebook-f"></i> Visit Page
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Facebook Feed Box -->
+                <div class="md:w-1/2 w-full flex justify-center md:justify-end">
+                    <div class="bg-brand-gray p-4 rounded-xl border border-gray-800 shadow-2xl">
+                        <div class="fb-page" 
+                             data-href="https://www.facebook.com/noormediasolution" 
+                             data-tabs="timeline" 
+                             data-width="500" 
+                             data-height="500" 
+                             data-small-header="false" 
+                             data-adapt-container-width="true" 
+                             data-hide-cover="false" 
+                             data-show-facepile="true">
+                            <blockquote cite="https://www.facebook.com/noormediasolution" class="fb-xfbml-parse-ignore">
+                                <a href="https://www.facebook.com/noormediasolution">Noor Media Solution</a>
+                            </blockquote>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
