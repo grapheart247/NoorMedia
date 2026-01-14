@@ -200,30 +200,23 @@
 
     <!-- FACEBOOK ACTIVITY SECTION -->
     <section id="facebook-activity" class="py-20 bg-black">
-        <div class="container mx-auto px-4">
-            <div class="flex flex-col md:flex-row gap-12 items-start">
-                <!-- Text Content -->
-                <div class="md:w-1/2">
-                    <h2 class="text-brand-gold uppercase tracking-widest text-sm font-bold mb-2">Stay Connected</h2>
-                    <h3 class="text-4xl font-serif font-bold mb-6">Our Facebook Activity</h3>
-                    <p class="text-gray-400 mb-8 text-lg">
-                        Follow our latest updates, behind-the-scenes moments, and recent event highlights directly from our Facebook page. We regularly share our work and interact with our community there.
-                    </p>
-                    <div class="flex gap-4">
-                        <a href="https://www.facebook.com/noormediasolution" target="_blank" class="px-6 py-3 bg-blue-600 text-white font-bold rounded hover:bg-blue-700 transition flex items-center gap-2">
-                            <i class="fab fa-facebook-f"></i> Visit Page
-                        </a>
-                    </div>
-                </div>
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-brand-gold uppercase tracking-widest text-sm font-bold mb-2">Stay Connected</h2>
+            <h3 class="text-4xl font-serif font-bold mb-12">Our Facebook Activity</h3>
+            
+            <div class="max-w-5xl mx-auto">
+                <p class="text-gray-400 mb-12 text-lg max-w-2xl mx-auto">
+                    Follow our latest updates, behind-the-scenes moments, and recent event highlights directly from our Facebook page.
+                </p>
                 
-                <!-- Facebook Feed Box -->
-                <div class="md:w-9/10 w-full flex justify-center md:justify-end mx-auto">
-                    <div class="bg-brand-gray p-4 rounded-xl border border-gray-800 shadow-2xl">
+                <!-- Facebook Feed Box - Centered and Wide -->
+                <div class="w-full md:w-[90%] mx-auto">
+                    <div class="bg-brand-gray p-6 rounded-xl border border-gray-800 shadow-2xl inline-block w-full max-w-[500px]">
                         <div class="fb-page" 
                              data-href="https://www.facebook.com/noormediasolution" 
                              data-tabs="timeline" 
-                             data-width="700" 
-                             data-height="500" 
+                             data-width="500" 
+                             data-height="600" 
                              data-small-header="false" 
                              data-adapt-container-width="true" 
                              data-hide-cover="false" 
@@ -232,6 +225,11 @@
                                 <a href="https://www.facebook.com/noormediasolution">Noor Media Solution</a>
                             </blockquote>
                         </div>
+                    </div>
+                    <div class="mt-8">
+                        <a href="https://www.facebook.com/noormediasolution" target="_blank" class="inline-flex px-8 py-4 bg-blue-600 text-white font-bold rounded-full hover:bg-blue-700 transition items-center gap-2">
+                            <i class="fab fa-facebook-f"></i> View Full Facebook Page
+                        </a>
                     </div>
                 </div>
             </div>
