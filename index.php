@@ -184,15 +184,43 @@
                     </div>
                     <h4 class="text-2xl font-bold text-white">Rizwan Elahi</h4>
                     <p class="text-brand-gold uppercase text-sm tracking-wider mt-1 font-semibold">Operation Manager</p>
+                    <div class="mt-6 pt-6 border-t border-gray-700 space-y-3">
+                        <div class="flex items-center justify-center gap-2 text-gray-300 hover:text-brand-gold transition">
+                            <i class="fab fa-whatsapp text-lg"></i>
+                            <a href="https://wa.me/923452866181" target="_blank" class="text-sm hover:underline">+92 345 2866181</a>
+                        </div>
+                        <div class="flex items-center justify-center gap-2 text-gray-300 hover:text-brand-gold transition">
+                            <i class="fas fa-envelope text-lg"></i>
+                            <a href="mailto:nmspvt121212@gmail.com" class="text-sm hover:underline">nmspvt121212@gmail.com</a>
+                        </div>
+                        <div class="flex items-center justify-center gap-2 text-gray-300 hover:text-brand-gold transition">
+                            <i class="fab fa-facebook text-lg"></i>
+                            <a href="https://www.facebook.com/rizwanelahi.rizwanelahi" target="_blank" class="text-sm hover:underline">Facebook Message</a>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- NoorGee -->
+                <!-- Noor-ud-Din -->
                 <div class="bg-brand-dark p-8 rounded-lg w-full md:w-1/3 border border-gray-800 hover:border-brand-gold transition group">
                     <div class="w-32 h-32 mx-auto rounded-full overflow-hidden border-4 border-gray-800 group-hover:border-brand-gold mb-6 transition">
-                        <img src="http://nm.noorgee.pk/asset/ng-gr.jpg" alt="NoorGee" class="w-full h-full object-cover">
+                        <img src="http://nm.noorgee.pk/asset/ng-gr.jpg" alt="Noor-ud-Din" class="w-full h-full object-cover">
                     </div>
-                    <h4 class="text-2xl font-bold text-white">NoorGee</h4>
+                    <h4 class="text-2xl font-bold text-white">Noor-ud-Din</h4>
                     <p class="text-brand-gold uppercase text-sm tracking-wider mt-1 font-semibold">Marketing Director</p>
+                    <div class="mt-6 pt-6 border-t border-gray-700 space-y-3">
+                        <div class="flex items-center justify-center gap-2 text-gray-300 hover:text-brand-gold transition">
+                            <i class="fab fa-whatsapp text-lg"></i>
+                            <a href="https://wa.me/923323320369" target="_blank" class="text-sm hover:underline">+92 332-3320369</a>
+                        </div>
+                        <div class="flex items-center justify-center gap-2 text-gray-300 hover:text-brand-gold transition">
+                            <i class="fas fa-envelope text-lg"></i>
+                            <a href="mailto:moon060781@gmail.com" class="text-sm hover:underline">moon060781@gmail.com</a>
+                        </div>
+                        <div class="flex items-center justify-center gap-2 text-gray-300 hover:text-brand-gold transition">
+                            <i class="fab fa-facebook text-lg"></i>
+                            <a href="https://www.facebook.com/moon060781" target="_blank" class="text-sm hover:underline">Facebook Message</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
