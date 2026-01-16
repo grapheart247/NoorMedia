@@ -283,7 +283,7 @@
                         <textarea name="message" rows="4" required class="w-full bg-brand-gray border border-gray-700 rounded p-3 text-brand-gold focus:border-white outline-none placeholder-gray-500"></textarea>
                     </div>
 
-                    <button type="submit" class="w-full bg-brand-gold text-black font-bold py-3 rounded hover:bg-white transition uppercase tracking-widest">Send Message</button>
+                    <button type="submit" class="w-full bg-gray-300 text-black font-bold py-3 rounded hover:bg-gray-200 transition uppercase tracking-widest">Send Message</button>
                 </form>
             </div>
         </div>
