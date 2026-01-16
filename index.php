@@ -260,27 +260,27 @@
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
                         <div>
                             <label class="block text-xs text-gray-500 mb-1 font-bold uppercase tracking-wider">Name</label>
-                            <input type="text" name="name" required class="w-full bg-brand-gray border border-gray-700 rounded p-3 text-brand-gold focus:border-white outline-none placeholder-gray-500">
+                            <input type="text" name="name" required class="w-full bg-gray-300 border border-gray-400 rounded p-3 text-black focus:border-brand-gold outline-none placeholder-gray-600">
                         </div>
                         <div>
                             <label class="block text-xs text-gray-500 mb-1 font-bold uppercase tracking-wider">Contact No</label>
-                            <input type="tel" name="contact" required class="w-full bg-brand-gray border border-gray-700 rounded p-3 text-brand-gold focus:border-white outline-none placeholder-gray-500">
+                            <input type="tel" name="contact" required class="w-full bg-gray-300 border border-gray-400 rounded p-3 text-black focus:border-brand-gold outline-none placeholder-gray-600">
                         </div>
                     </div>
 
                     <div class="mb-4">
                         <label class="block text-xs text-gray-500 mb-1 font-bold uppercase tracking-wider">Email</label>
-                        <input type="email" name="email" required class="w-full bg-brand-gray border border-gray-700 rounded p-3 text-brand-gold focus:border-white outline-none placeholder-gray-500">
+                        <input type="email" name="email" required class="w-full bg-gray-300 border border-gray-400 rounded p-3 text-black focus:border-brand-gold outline-none placeholder-gray-600">
                     </div>
 
                     <div class="mb-4">
                         <label class="block text-xs text-gray-500 mb-1 font-bold uppercase tracking-wider">Subject</label>
-                        <input type="text" name="subject" required class="w-full bg-brand-gray border border-gray-700 rounded p-3 text-brand-gold focus:border-white outline-none placeholder-gray-500">
+                        <input type="text" name="subject" required class="w-full bg-gray-300 border border-gray-400 rounded p-3 text-black focus:border-brand-gold outline-none placeholder-gray-600">
                     </div>
 
                     <div class="mb-6">
                         <label class="block text-xs text-gray-500 mb-1 font-bold uppercase tracking-wider">Message</label>
-                        <textarea name="message" rows="4" required class="w-full bg-brand-gray border border-gray-700 rounded p-3 text-brand-gold focus:border-white outline-none placeholder-gray-500"></textarea>
+                        <textarea name="message" rows="4" required class="w-full bg-gray-300 border border-gray-400 rounded p-3 text-black focus:border-brand-gold outline-none placeholder-gray-600"></textarea>
                     </div>
 
                     <button type="submit" class="w-full bg-gray-300 text-black font-bold py-3 rounded hover:bg-gray-200 transition uppercase tracking-widest">Send Message</button>
