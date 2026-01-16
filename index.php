@@ -195,7 +195,7 @@
                         </div>
                         <div class="flex items-center justify-center gap-2 text-gray-300 hover:text-brand-gold transition">
                             <i class="fab fa-facebook text-lg"></i>
-                            <a href="https://www.facebook.com/rizwanelahi.rizwanelahi" target="_blank" class="text-sm hover:underline">Facebook Message</a>
+                            <a href="https://m.me/rizwanelahi.rizwanelahi" target="_blank" class="text-sm hover:underline">Facebook Message</a>
                         </div>
                     </div>
                 </div>
@@ -218,7 +218,7 @@
                         </div>
                         <div class="flex items-center justify-center gap-2 text-gray-300 hover:text-brand-gold transition">
                             <i class="fab fa-facebook text-lg"></i>
-                            <a href="https://www.facebook.com/moon060781" target="_blank" class="text-sm hover:underline">Facebook Message</a>
+                            <a href="https://m.me/moon060781" target="_blank" class="text-sm hover:underline">Facebook Message</a>
                         </div>
                     </div>
                 </div>
