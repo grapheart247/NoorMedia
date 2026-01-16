@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $stmt->bind_param("sssss", $site_source, $name, $email, $subject, $final_message);
 
         if ($stmt->execute()) {
-            header("Location: index.html?status=success");
+            header("Location: index.php?status=success");
             exit();
         } else {
             echo "Error executing query: " . $stmt->error;

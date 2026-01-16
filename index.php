@@ -307,9 +307,66 @@
     </footer>
     
     <script>
+        // Success Message Bubble Handler
         const urlParams = new URLSearchParams(window.location.search);
         if (urlParams.get('status') === 'success') {
-            alert("Message Sent! We will contact you shortly.");
+            // Create success message bubble
+            const successBubble = document.createElement('div');
+            successBubble.id = 'success-message';
+            successBubble.innerHTML = `
+                <div class="fixed top-8 right-8 bg-green-500 text-white px-8 py-4 rounded-lg shadow-2xl flex items-center gap-3 z-50 animate-slideIn">
+                    <i class="fas fa-check-circle text-2xl"></i>
+                    <div>
+                        <p class="font-bold text-lg">Success!</p>
+                        <p class="text-sm">Your message has been sent successfully. We will contact you shortly.</p>
+                    </div>
+                </div>
+                <style>
+                    @keyframes slideIn {
+                        from {
+                            transform: translateX(400px);
+                            opacity: 0;
+                        }
+                        to {
+                            transform: translateX(0);
+                            opacity: 1;
+                        }
+                    }
+                    @keyframes slideOut {
+                        from {
+                            transform: translateX(0);
+                            opacity: 1;
+                        }
+                        to {
+                            transform: translateX(400px);
+                            opacity: 0;
+                        }
+                    }
+                    .animate-slideIn {
+                        animation: slideIn 0.5s ease-out;
+                    }
+                    .animate-slideOut {
+                        animation: slideOut 0.5s ease-out forwards;
+                    }
+                </style>
+            `;
+            document.body.appendChild(successBubble);
+            
+            // Remove URL parameter to clean up the address bar
+            window.history.replaceState({}, document.title, window.location.pathname);
+            
+            // Auto-dismiss after 10 seconds
+            setTimeout(() => {
+                const messageBubble = document.getElementById('success-message');
+                if (messageBubble) {
+                    const messageDiv = messageBubble.querySelector('div');
+                    messageDiv.classList.remove('animate-slideIn');
+                    messageDiv.classList.add('animate-slideOut');
+                    setTimeout(() => {
+                        messageBubble.remove();
+                    }, 500);
+                }
+            }, 10000);
         }
     </script>
 </body>
