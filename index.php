@@ -58,7 +58,7 @@
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v24.0"></script>
 
-    <!-- NAVIGATION -->
+  <!-- NAVIGATION -->
     <nav class="fixed w-full z-50 bg-black/90 backdrop-blur-sm border-b border-gray-800" id="navbar">
         <div class="container mx-auto px-4 py-3 flex justify-between items-center">
             <a href="#" class="flex items-center gap-3">
@@ -89,15 +89,114 @@
         </div>
     </nav>
 
-    <!-- HERO -->
-    <section id="home" class="hero-bg h-screen flex items-center justify-center text-center px-4">
-        <div class="max-w-4xl">
-            <p class="text-brand-gold font-bold tracking-[0.3em] mb-4 uppercase">Serving Since 1994</p>
-            <h1 class="text-5xl md:text-7xl font-serif font-bold mb-6">Capturing Moments <br> Creating Memories</h1>
-            <p class="text-gray-300 text-lg mb-10">Professional Wedding Photography & Cinematic Videography.</p>
-            <div class="flex gap-4 justify-center">
-                <a href="#contact" class="px-8 py-4 bg-brand-gold text-black font-bold rounded hover:bg-white transition">Book Event</a>
-                <a href="#portfolio" class="px-8 py-4 border border-white text-white font-bold rounded hover:bg-white hover:text-black transition">Gallery</a>
+    <!-- ENHANCED INTERACTIVE HERO -->
+    <section id="home" class="hero-bg min-h-screen flex items-center justify-center text-center px-4 pt-20">
+        <!-- Floating Particles -->
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="particle" style="top: 20%; left: 10%; animation-delay: 0s;"></div>
+            <div class="particle" style="top: 40%; left: 80%; animation-delay: 2s;"></div>
+            <div class="particle" style="top: 60%; left: 30%; animation-delay: 4s;"></div>
+            <div class="particle" style="top: 80%; left: 70%; animation-delay: 6s;"></div>
+            <div class="particle" style="top: 30%; left: 50%; animation-delay: 3s;"></div>
+        </div>
+
+        <div class="hero-content max-w-5xl">
+            <!-- Animated Badge -->
+            <div class="animate-text mb-6 inline-block">
+                <span class="px-6 py-2 bg-brand-gold/10 border border-brand-gold/30 rounded-full text-brand-gold font-bold tracking-[0.2em] uppercase text-sm">
+                    <i class="fas fa-star mr-2"></i> Serving Since 1994
+                </span>
+            </div>
+
+            <!-- Main Heading with Gradient -->
+            <h1 class="text-5xl md:text-7xl font-serif font-bold mb-6 animate-text leading-tight">
+                <span class="block mb-3">Capturing Moments</span>
+                <span class="gradient-text">Creating Memories</span>
+            </h1>
+
+            <!-- Animated Subtitle -->
+            <p class="text-gray-300 text-lg md:text-xl mb-12 animate-text max-w-3xl mx-auto">
+                Your complete media solution for weddings, events, and celebrations. From stunning photography to cinematic videography, professional music production, and comprehensive media services.
+            </p>
+
+            <!-- Interactive Service Highlights -->
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-12 service-showcase">
+                <div class="showcase-item bg-brand-gray/50 backdrop-blur-sm p-6 rounded-lg border border-brand-gold/20 hover:border-brand-gold/60 transition">
+                    <i class="fas fa-camera text-3xl text-brand-gold icon-glow mb-3 block"></i>
+                    <h3 class="font-bold text-sm uppercase tracking-wider">Wedding Photography</h3>
+                    <p class="text-xs text-gray-400 mt-2">Professional coverage from pre-wedding to reception</p>
+                </div>
+
+                <div class="showcase-item bg-brand-gray/50 backdrop-blur-sm p-6 rounded-lg border border-brand-gold/20 hover:border-brand-gold/60 transition">
+                    <i class="fas fa-video text-3xl text-brand-gold icon-glow mb-3 block"></i>
+                    <h3 class="font-bold text-sm uppercase tracking-wider">Event Videography</h3>
+                    <p class="text-xs text-gray-400 mt-2">4K cinematic videos with drone & storytelling</p>
+                </div>
+
+                <div class="showcase-item bg-brand-gray/50 backdrop-blur-sm p-6 rounded-lg border border-brand-gold/20 hover:border-brand-gold/60 transition">
+                    <i class="fas fa-music text-3xl text-brand-gold icon-glow mb-3 block"></i>
+                    <h3 class="font-bold text-sm uppercase tracking-wider">Music Production</h3>
+                    <p class="text-xs text-gray-400 mt-2">Custom songs & professional audio production</p>
+                </div>
+
+                <div class="showcase-item bg-brand-gray/50 backdrop-blur-sm p-6 rounded-lg border border-brand-gold/20 hover:border-brand-gold/60 transition">
+                    <i class="fas fa-palette text-3xl text-brand-gold icon-glow mb-3 block"></i>
+                    <h3 class="font-bold text-sm uppercase tracking-wider">Media Solutions</h3>
+                    <p class="text-xs text-gray-400 mt-2">Complete creative services for all your needs</p>
+                </div>
+            </div>
+
+            <!-- CTA Buttons -->
+            <div class="flex flex-col md:flex-row gap-4 justify-center animate-text">
+                <a href="#contact" class="px-8 py-4 bg-brand-gold text-black font-bold rounded-lg hover:bg-white transition transform hover:scale-105 shadow-lg hover:shadow-xl">
+                    <i class="fas fa-calendar-check mr-2"></i> Book Your Event
+                </a>
+                <a href="#services" class="px-8 py-4 border-2 border-brand-gold text-brand-gold font-bold rounded-lg hover:bg-brand-gold hover:text-black transition transform hover:scale-105">
+                    <i class="fas fa-images mr-2"></i> Explore Services
+                </a>
+                <a href="#portfolio" class="px-8 py-4 border-2 border-white text-white font-bold rounded-lg hover:bg-white hover:text-black transition transform hover:scale-105">
+                    <i class="fas fa-star mr-2"></i> View Gallery
+                </a>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <div class="mt-16 animate-bounce">
+                <p class="text-brand-gold text-sm mb-2">Scroll to explore</p>
+                <i class="fas fa-chevron-down text-brand-gold text-2xl"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="py-20 bg-brand-gray">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-brand-gold uppercase tracking-widest text-sm font-bold mb-4">About Us</h2>
+                    <h3 class="text-4xl font-serif font-bold mb-6">30 Years of Excellence</h3>
+                    <p class="text-gray-300 mb-4">Since 1994, Noor Media Solution has been capturing life's most precious moments with passion and professionalism. We specialize in transforming your special events into timeless memories.</p>
+                    <p class="text-gray-300 mb-6">Our team of experienced professionals uses cutting-edge technology and creative expertise to deliver exceptional results in wedding photography, event videography, music production, and comprehensive media solutions.</p>
+                    <div class="grid grid-cols-3 gap-4">
+                        <div class="text-center">
+                            <div class="counter">30+</div>
+                            <p class="text-gray-400 text-sm">Years Experience</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="counter">1000+</div>
+                            <p class="text-gray-400 text-sm">Events Covered</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="counter">100%</div>
+                            <p class="text-gray-400 text-sm">Satisfaction</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="bg-gradient-to-br from-brand-gold/20 to-brand-gold/5 rounded-lg p-8 border border-brand-gold/30">
+                        <i class="fas fa-video text-8xl text-brand-gold/30 mb-4"></i>
+                        <p class="text-gray-300 text-lg">We combine artistic vision with technical excellence to create unforgettable media experiences.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -106,28 +205,57 @@
     <section id="services" class="py-20 bg-brand-dark">
         <div class="container mx-auto px-4 text-center">
             <h2 class="text-brand-gold uppercase tracking-widest text-sm font-bold mb-2">Our Expertise</h2>
-            <h3 class="text-4xl font-serif font-bold mb-16">Services We Provide</h3>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-brand-gray p-8 rounded-lg border border-gray-800 hover:border-brand-gold transition">
-                    <i class="fas fa-rings text-4xl text-brand-gold mb-4"></i>
-                    <h4 class="text-xl font-bold mb-2">Wedding Photography</h4>
-                    <p class="text-gray-400">Full event coverage from Mehndi to Walima.</p>
+            <h3 class="text-4xl font-serif font-bold mb-16">Comprehensive Media Solutions</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Wedding Photography -->
+                <div class="service-card bg-brand-gray p-8 rounded-lg border border-gray-800">
+                    <div class="mb-4"><i class="fas fa-ring text-5xl text-brand-gold icon-glow block"></i></div>
+                    <h4 class="text-xl font-bold mb-3">Wedding Photography</h4>
+                    <p class="text-gray-400 text-sm mb-4">Full event coverage from pre-wedding shoots to reception highlights. Professional albums and digital galleries included.</p>
+                    <ul class="text-xs text-gray-500 space-y-2">
+                        <li><i class="fas fa-check text-brand-gold mr-2"></i>Pre-wedding shoots</li>
+                        <li><i class="fas fa-check text-brand-gold mr-2"></i>Mehndi to Walima coverage</li>
+                        <li><i class="fas fa-check text-brand-gold mr-2"></i>Premium albums</li>
+                    </ul>
                 </div>
-                <div class="bg-brand-gray p-8 rounded-lg border border-gray-800 hover:border-brand-gold transition">
-                    <i class="fas fa-film text-4xl text-brand-gold mb-4"></i>
-                    <h4 class="text-xl font-bold mb-2">Cinematic Video</h4>
-                    <p class="text-gray-400">4K Highlights, Drone shots & Storytelling.</p>
+                <!-- Event Videography -->
+                <div class="service-card bg-brand-gray p-8 rounded-lg border border-gray-800">
+                    <div class="mb-4"><i class="fas fa-film text-5xl text-brand-gold icon-glow block"></i></div>
+                    <h4 class="text-xl font-bold mb-3">Event Videography</h4>
+                    <p class="text-gray-400 text-sm mb-4">Cinematic 4K videos with drone footage, professional editing, and storytelling that brings your event to life.</p>
+                    <ul class="text-xs text-gray-500 space-y-2">
+                        <li><i class="fas fa-check text-brand-gold mr-2"></i>4K cinematography</li>
+                        <li><i class="fas fa-check text-brand-gold mr-2"></i>Drone footage</li>
+                        <li><i class="fas fa-check text-brand-gold mr-2"></i>Professional editing</li>
+                    </ul>
                 </div>
-                <div class="bg-brand-gray p-8 rounded-lg border border-gray-800 hover:border-brand-gold transition">
-                    <i class="fas fa-book-open text-4xl text-brand-gold mb-4"></i>
-                    <h4 class="text-xl font-bold mb-2">Digital Albums</h4>
-                    <p class="text-gray-400">Premium Dubai binding & Karizma prints.</p>
+                <!-- Music Production -->
+                <div class="service-card bg-brand-gray p-8 rounded-lg border border-gray-800">
+                    <div class="mb-4"><i class="fas fa-music text-5xl text-brand-gold icon-glow block"></i></div>
+                    <h4 class="text-xl font-bold mb-3">Music Production</h4>
+                    <p class="text-gray-400 text-sm mb-4">Custom songs, professional recording, mixing, and mastering services for your special moments and celebrations.</p>
+                    <ul class="text-xs text-gray-500 space-y-2">
+                        <li><i class="fas fa-check text-brand-gold mr-2"></i>Custom compositions</li>
+                        <li><i class="fas fa-check text-brand-gold mr-2"></i>Professional recording</li>
+                        <li><i class="fas fa-check text-brand-gold mr-2"></i>Audio mastering</li>
+                    </ul>
+                </div>
+                <!-- Digital Albums & Prints -->
+                <div class="service-card bg-brand-gray p-8 rounded-lg border border-gray-800">
+                    <div class="mb-4"><i class="fas fa-book-open text-5xl text-brand-gold icon-glow block"></i></div>
+                    <h4 class="text-xl font-bold mb-3">Digital Albums & Prints</h4>
+                    <p class="text-gray-400 text-sm mb-4">Premium Dubai binding, Karizma prints, digital galleries, and custom merchandise to preserve your memories.</p>
+                    <ul class="text-xs text-gray-500 space-y-2">
+                        <li><i class="fas fa-check text-brand-gold mr-2"></i>Premium binding</li>
+                        <li><i class="fas fa-check text-brand-gold mr-2"></i>Digital galleries</li>
+                        <li><i class="fas fa-check text-brand-gold mr-2"></i>Custom prints</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- PORTFOLIO SECTION -->
+    <!-- RESTORED PORTFOLIO SECTION -->
     <section id="portfolio" class="py-20 bg-black text-center">
         <h2 class="text-brand-gold uppercase tracking-widest text-sm font-bold mb-2">Our Portfolio</h2>
         <h3 class="text-4xl font-serif font-bold mb-12">Our Recent Work</h3>
@@ -169,7 +297,6 @@
             </div>
         </div>
     </section>
-
     <!-- TEAM SECTION -->
     <section id="team" class="py-20 bg-brand-gray">
         <div class="container mx-auto px-4 text-center">
