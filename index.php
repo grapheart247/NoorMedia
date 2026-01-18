@@ -255,7 +255,9 @@
         </div>
     </section>
 
-    <!-- RESTORED PORTFOLIO SECTION -->
+
+
+  <!-- PORTFOLIO SECTION -->
     <section id="portfolio" class="py-20 bg-black text-center">
         <h2 class="text-brand-gold uppercase tracking-widest text-sm font-bold mb-2">Our Portfolio</h2>
         <h3 class="text-4xl font-serif font-bold mb-12">Our Recent Work</h3>
@@ -297,6 +299,7 @@
             </div>
         </div>
     </section>
+
     <!-- TEAM SECTION -->
     <section id="team" class="py-20 bg-brand-gray">
         <div class="container mx-auto px-4 text-center">
