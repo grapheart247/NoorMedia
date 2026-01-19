@@ -18,9 +18,9 @@ $sources = [
         'label' => 'Grapheart247 (Main Repo - Master)'
     ],
     'moon060781' => [
-        'url' => "https://moon060781-bot:$token@github.com/moon060781-bot/NoorMedia_m81.git",
-        'branch' => 'NoorMedia_m81',
-        'label' => 'Moon060781 (Bot Repo - NoorMedia_m81)'
+        'url' => "https://moon060781-bot:$token@github.com/moon060781/NoorMedia_m81.git",
+        'branch' => 'master-m81',
+        'label' => 'Moon060781 (Bot Repo - master-m81)'
     ]
 ];
 
