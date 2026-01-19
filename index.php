@@ -36,12 +36,38 @@
         }
     </script>
     <style>
-        .hero-bg {
-            background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+        .hero-slider {
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-slide {
+            position: absolute;
+            inset: 0;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
         }
+        .hero-slide.active {
+            opacity: 1;
+        }
+        .hero-slide::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.6));
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+        .delay-1 { animation-delay: 0.2s; }
+        .delay-2 { animation-delay: 0.4s; }
+        .delay-3 { animation-delay: 0.6s; }
         .portfolio-img {
             width: 100%;
             height: 100%;
@@ -90,64 +116,47 @@
     </nav>
 
     <!-- ENHANCED INTERACTIVE HERO -->
-    <section id="home" class="hero-bg min-h-screen flex items-center justify-center text-center px-4 pt-20">
-        <!-- Floating Particles -->
-        <div class="absolute inset-0 overflow-hidden">
-            <div class="particle" style="top: 20%; left: 10%; animation-delay: 0s;"></div>
-            <div class="particle" style="top: 40%; left: 80%; animation-delay: 2s;"></div>
-            <div class="particle" style="top: 60%; left: 30%; animation-delay: 4s;"></div>
-            <div class="particle" style="top: 80%; left: 70%; animation-delay: 6s;"></div>
-            <div class="particle" style="top: 30%; left: 50%; animation-delay: 3s;"></div>
-        </div>
+    <section id="home" class="hero-slider min-h-screen flex items-center justify-center text-center px-4 pt-20">
+        <!-- Slides -->
+        <div class="hero-slide active" style="background-image: url('https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');"></div>
+        <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');"></div>
+        <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1492684223066-81342ee5ff30?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');"></div>
+        <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');"></div>
 
-        <div class="hero-content max-w-5xl">
-            <!-- Animated Badge -->
-            <div class="animate-text mb-6 inline-block">
-                <span class="px-6 py-2 bg-brand-gold/10 border border-brand-gold/30 rounded-full text-brand-gold font-bold tracking-[0.2em] uppercase text-sm">
-                    <i class="fas fa-star mr-2"></i> Serving Since 1994
-                </span>
+        <div class="hero-content max-w-5xl relative z-10">
+            <div id="hero-content-wrapper">
+                <!-- Content will be injected by JS -->
             </div>
-
-            <!-- Main Heading with Gradient -->
-            <h1 class="text-5xl md:text-7xl font-serif font-bold mb-6 animate-text leading-tight">
-                <span class="block mb-3">Capturing Moments</span>
-                <span class="gradient-text">Creating Memories</span>
-            </h1>
-
-            <!-- Animated Subtitle -->
-            <p class="text-gray-300 text-lg md:text-xl mb-12 animate-text max-w-3xl mx-auto">
-                Your complete media solution for weddings, events, and celebrations. From stunning photography to cinematic videography, professional music production, and comprehensive media services.
-            </p>
 
             <!-- Interactive Service Highlights -->
             <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-12 service-showcase">
-                <div class="showcase-item bg-brand-gray/50 backdrop-blur-sm p-6 rounded-lg border border-brand-gold/20 hover:border-brand-gold/60 transition">
-                    <i class="fas fa-camera text-3xl text-brand-gold icon-glow mb-3 block"></i>
+                <div class="showcase-item bg-brand-gray/50 backdrop-blur-sm p-6 rounded-lg border border-brand-gold/20 hover:border-brand-gold/60 transition-all duration-500 hover:-translate-y-2 group">
+                    <i class="fas fa-camera text-3xl text-brand-gold icon-glow mb-3 block group-hover:scale-110 transition-transform"></i>
                     <h3 class="font-bold text-sm uppercase tracking-wider">Wedding Photography</h3>
                     <p class="text-xs text-gray-400 mt-2">Professional coverage from pre-wedding to reception</p>
                 </div>
 
-                <div class="showcase-item bg-brand-gray/50 backdrop-blur-sm p-6 rounded-lg border border-brand-gold/20 hover:border-brand-gold/60 transition">
-                    <i class="fas fa-video text-3xl text-brand-gold icon-glow mb-3 block"></i>
+                <div class="showcase-item bg-brand-gray/50 backdrop-blur-sm p-6 rounded-lg border border-brand-gold/20 hover:border-brand-gold/60 transition-all duration-500 hover:-translate-y-2 group">
+                    <i class="fas fa-video text-3xl text-brand-gold icon-glow mb-3 block group-hover:scale-110 transition-transform"></i>
                     <h3 class="font-bold text-sm uppercase tracking-wider">Event Videography</h3>
                     <p class="text-xs text-gray-400 mt-2">4K cinematic videos with drone & storytelling</p>
                 </div>
 
-                <div class="showcase-item bg-brand-gray/50 backdrop-blur-sm p-6 rounded-lg border border-brand-gold/20 hover:border-brand-gold/60 transition">
-                    <i class="fas fa-music text-3xl text-brand-gold icon-glow mb-3 block"></i>
+                <div class="showcase-item bg-brand-gray/50 backdrop-blur-sm p-6 rounded-lg border border-brand-gold/20 hover:border-brand-gold/60 transition-all duration-500 hover:-translate-y-2 group">
+                    <i class="fas fa-music text-3xl text-brand-gold icon-glow mb-3 block group-hover:scale-110 transition-transform"></i>
                     <h3 class="font-bold text-sm uppercase tracking-wider">Music Production</h3>
                     <p class="text-xs text-gray-400 mt-2">Custom songs & professional audio production</p>
                 </div>
 
-                <div class="showcase-item bg-brand-gray/50 backdrop-blur-sm p-6 rounded-lg border border-brand-gold/20 hover:border-brand-gold/60 transition">
-                    <i class="fas fa-palette text-3xl text-brand-gold icon-glow mb-3 block"></i>
+                <div class="showcase-item bg-brand-gray/50 backdrop-blur-sm p-6 rounded-lg border border-brand-gold/20 hover:border-brand-gold/60 transition-all duration-500 hover:-translate-y-2 group">
+                    <i class="fas fa-palette text-3xl text-brand-gold icon-glow mb-3 block group-hover:scale-110 transition-transform"></i>
                     <h3 class="font-bold text-sm uppercase tracking-wider">Media Solutions</h3>
                     <p class="text-xs text-gray-400 mt-2">Complete creative services for all your needs</p>
                 </div>
             </div>
 
             <!-- CTA Buttons -->
-            <div class="flex flex-col md:flex-row gap-4 justify-center animate-text">
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
                 <a href="#contact" class="px-8 py-4 bg-brand-gold text-black font-bold rounded-lg hover:bg-white transition transform hover:scale-105 shadow-lg hover:shadow-xl">
                     <i class="fas fa-calendar-check mr-2"></i> Book Your Event
                 </a>
@@ -191,10 +200,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="relative">
-                    <div class="bg-gradient-to-br from-brand-gold/20 to-brand-gold/5 rounded-lg p-8 border border-brand-gold/30">
-                        <i class="fas fa-video text-8xl text-brand-gold/30 mb-4"></i>
-                        <p class="text-gray-300 text-lg">We combine artistic vision with technical excellence to create unforgettable media experiences.</p>
+                <div class="relative group">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-brand-gold to-yellow-600 rounded-lg blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
+                    <div class="relative bg-brand-dark rounded-lg overflow-hidden border border-brand-gold/30">
+                        <img src="/asset/30-year_n.jpg" alt="30 Years of Excellence" class="w-full h-auto object-cover transform group-hover:scale-105 transition duration-700">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
+                            <p class="text-brand-gold font-serif italic text-lg">"30 Years of Excellence in Every Frame"</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -380,7 +392,7 @@
                         <div class="fb-page" 
                              data-href="https://www.facebook.com/noormediasolution" 
                              data-tabs="timeline" 
-                             data-width="500" 
+                             data-width="700" 
                              data-height="600" 
                              data-small-header="false" 
                              data-adapt-container-width="true" 
@@ -465,6 +477,62 @@
     </footer>
     
     <script>
+        // Hero Slider Logic
+        const slides = document.querySelectorAll('.hero-slide');
+        const contentWrapper = document.getElementById('hero-content-wrapper');
+        const slideContent = [
+            {
+                badge: "Serving Since 1994",
+                h1: "Capturing Moments<br><span class='text-brand-gold'>Creating Memories</span>",
+                p: "Your complete media solution for weddings, events, and celebrations. 30 years of excellence in every frame."
+            },
+            {
+                badge: "Cinematic Excellence",
+                h1: "Your Story Told<br><span class='text-brand-gold'>Through Our Lens</span>",
+                p: "From grand weddings to corporate milestones, we bring your vision to life with cinematic precision."
+            },
+            {
+                badge: "Professional Media",
+                h1: "Beyond Just<br><span class='text-brand-gold'>Photography</span>",
+                p: "Comprehensive media solutions including music production, drone coverage, and creative storytelling."
+            },
+            {
+                badge: "Book Now",
+                h1: "Let's Make Your<br><span class='text-brand-gold'>Event Unforgettable</span>",
+                p: "Join thousands of happy clients who trusted Noor Media Solution for their most precious moments."
+            }
+        ];
+
+        let currentSlide = 0;
+
+        function updateHeroContent(index) {
+            const content = slideContent[index];
+            contentWrapper.innerHTML = `
+                <div class="animate-fade-up mb-6 inline-block">
+                    <span class="px-6 py-2 bg-brand-gold/10 border border-brand-gold/30 rounded-full text-brand-gold font-bold tracking-[0.2em] uppercase text-sm">
+                        <i class="fas fa-star mr-2"></i> ${content.badge}
+                    </span>
+                </div>
+                <h1 class="text-5xl md:text-7xl font-serif font-bold mb-6 animate-fade-up delay-1 leading-tight">
+                    ${content.h1}
+                </h1>
+                <p class="text-gray-300 text-lg md:text-xl mb-12 animate-fade-up delay-2 max-w-3xl mx-auto">
+                    ${content.p}
+                </p>
+            `;
+        }
+
+        function nextSlide() {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.add('active');
+            updateHeroContent(currentSlide);
+        }
+
+        // Initialize first slide
+        updateHeroContent(0);
+        setInterval(nextSlide, 5000);
+
         // Success Message Bubble Handler
         const urlParams = new URLSearchParams(window.location.search);
         if (urlParams.get('status') === 'success') {
